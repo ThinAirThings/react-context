@@ -12,7 +12,6 @@ export const createContextState = <T,>(
 ] => {
     // Folder Context
     const Context = createContext<[T, Updater<T>]>([initialValue, () => {}])
-
     const ContextProvider = ({
         children
     }: {
