@@ -1,7 +1,7 @@
 {
-  "name": "@thinairthings/react-components",
-  "description": "Thin Air React Component Library",
-  "version": "0.0.17",
+  "name": "@thinairthings/react-context",
+  "description": "Thin Air React Context Library",
+  "version": "0.0.0",
   "type": "module",
   "files": [
     "dist"
@@ -10,7 +10,7 @@
   "types": "dist/index.d.ts",
   "repository": {
     "type": "git",
-    "url": "https://github.com/ThinAirThings/react-components.git"
+    "url": "https://github.com/ThinAirThings/react-context.git"
   },
   "scripts": {
     "dev": "vite",
@@ -26,8 +26,7 @@
   },
   "peerDependencies": {
     "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "react-feather": "^2.0.10"
+    "react-dom": "^18.2.0"
   },
   "devDependencies": {
     "@types/node": "^18.16.2",
