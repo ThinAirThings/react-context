@@ -8,7 +8,8 @@ export const createContextState = <T,>(
     }: {
         children: ReactNode;
     }) => JSX.Element, 
-    () => [T, Updater<T>]
+    () => [T, Updater<T>],
+    React.Context<[T, Updater<T>]>
 ] => {
     // Folder Context
     const Context = createContext<[T, Updater<T>]>([initialValue, () => {}])
@@ -31,7 +32,7 @@ export const createContextState = <T,>(
     const useCustomContext = () => {
         return useContext(Context)
     }
-    return [ContextProvider, useCustomContext]
+    return [ContextProvider, useCustomContext, Context]
 }
 
 export const createContextRef = <T,>(): [
